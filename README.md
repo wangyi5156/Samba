@@ -41,12 +41,12 @@ mkdir scene_datasets && cd scene_datasets
 
 ### 1.Training
 ```bash
-python ss_baselines/av_nav/run.py --exp-config ss_baselines/av_nav/config/audionav/replica/train_telephone/audiogoal_depth.yaml --model-dir data/models/replica/audiogoal_depth
+python ss_baselines/av_nav/run.py --exp-config ss_baselines/av_wan/config/audionav/replica/train_telephone/audiogoal_depth.yaml --model-dir data/models/replica/audiogoal_depth
 ```
 
 ### 2.Validation (evaluate each checkpoint and generate a validation curve)
 ```bahs
-python ss_baselines/av_nav/run.py --run-type eval --exp-config ss_baselines/av_nav/config/audionav/replica/val_telephone/audiogoal_depth.yaml --model-dir data/models/replica/audiogoal_depth
+python ss_baselines/av_nav/run.py --run-type eval --exp-config ss_baselines/av_wan/config/audionav/replica/val_telephone/audiogoal_depth.yaml --model-dir data/models/replica/audiogoal_depth
 ```
 
 ### 3.Test the best validation checkpoint based on validation curve
